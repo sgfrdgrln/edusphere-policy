@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EduSphere</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/styles.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #E3DCC2;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        /* Navigation Bar Styles */
+        .navbar {
+            background-color: #A6A867;
+        }
+        .navbar-brand {
+            color: #51513D !important;
+            font-weight: bold;
+        }
+        .navbar .nav-link {
+            color: #ffffff;
+            font-weight: bold;
+        }
+        .navbar .nav-link:hover {
+            color: #dddddd;
+        }
+        /* Main Content Styles */
+        .container {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        h4 {
+            font-size: 1.5rem;
+            color: #555;
+            margin-bottom: 30px;
+        }
+        .row .col-md-3 {
+            margin-bottom: 30px;
+        }
+        .btn-primary {
+            background-color: #0044cc;
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: #003399;
+        }
+        /* Footer Styles */
+        .footer {
+            background-color: #A6A867;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">EduSphere</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="terms-and-conditions.html">Terms and Conditions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="user-data-deletion.html">Data Deletion</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about-us.html">About Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1>Welcome to EduSphere</h1>
+        <h4 class="text-secondary typing-animation" id="slogan">Empowering Educators, Inspiring Excellence!</h4>
+        <p>Your one-stop solution for managing and understanding educational resources and policies. Explore our site for more information on our terms, privacy practices, and data management policies.</p>
+
+        <div class="row mt-4">
+            <div class="col-md-3">
+                <h3>Privacy Policy</h3>
+                <p>Learn about how we handle your data and ensure your privacy.</p>
+                <a href="privacy-policy.html" class="btn btn-primary">Read More</a>
+            </div>
+            <div class="col-md-3">
+                <h3>Terms & Conditions</h3>
+                <p>Understand the rules and guidelines for using our services.</p>
+                <a href="terms-and-conditions.html" class="btn btn-primary">Read More</a>
+            </div>
+            <div class="col-md-3">
+                <h3>Data Deletion</h3>
+                <p>Find out how you can request the deletion of your data.</p>
+                <a href="user-data-deletion.html" class="btn btn-primary">Read More</a>
+            </div>
+            <div class="col-md-3">
+                <h3>About Us</h3>
+                <p>Learn more about our mission and vision for the education community.</p>
+                <a href="about-us.html" class="btn btn-primary">Read More</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 EduSphere. All rights reserved.</p>
+            <p>Contact us: <a href="mailto:gazel0123@gmail.com" style="color: white;">gazel0123@gmail.com</a></p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Typing Animation Script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const text = "Empowering Educators, Inspiring Excellence!";
+            let index = 0;
+            const speed = 100; // Typing speed in milliseconds
+            const sloganElement = document.getElementById("slogan");
+
+            function type() {
+                if (index < text.length) {
+                    sloganElement.textContent += text.charAt(index);
+                    index++;
+                    setTimeout(type, speed);
+                }
+            }
+
+            sloganElement.textContent = ""; // Clear the text before typing
+            type();
+        });
+    </script>
+</body>
+</html>

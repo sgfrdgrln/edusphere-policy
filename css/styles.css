@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0px;
+    padding: 0px;
+    background-color: #E3DCC2;
+}
+
+/* Navigation bar styling */
+.navbar {
+    background-color: #A6A867 !important; /* Set the navigation bar color */
+}
+
+h1 {
+    color: #333;
+}
+
+h2 {
+    color: #555;
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    background-color: #A6A867;
+}
+
+.navbar-brand {
+    color: #51513D !important;
+    font-weight: bold;
+}
+
+.navbar .nav-link {
+    color: #ffffff !important; /* Ensures the text color is white */
+    font-weight: bold;
+}
+
+.navbar .nav-link:hover {
+    color: #dddddd !important; /* Adjust hover color if needed */
+}
+ /* Footer Styles */
+        .footer {
+            background-color: #A6A867;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 30px;
+        }
